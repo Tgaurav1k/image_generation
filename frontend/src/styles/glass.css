@@ -1,0 +1,32 @@
+/* Base glass card */
+.glass {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+}
+
+/* Surface glass (sidebar) */
+.glass-surface {
+  background: var(--bg-surface);
+  border-right: 1px solid var(--glass-border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Elevated glass (modals, detail panel) */
+.glass-elevated {
+  background: rgba(30, 36, 54, 0.80);
+  border: 1px solid var(--border-strong);
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+}
+
+/* Glass hover state */
+.glass-interactive {
+  transition: all var(--duration-fast) var(--ease-out);
+}
+.glass-interactive:hover {
+  background: var(--glass-hover);
+  border-color: var(--border-default);
+}
